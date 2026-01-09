@@ -117,11 +117,16 @@ search_tool = types.Tool(
             name="search_knowledge_base",
             description="Look up answers in the knowledge base.",
             parameters=types.Schema(
-                type=types.Type.OBJECT,
+                type="OBJECT",
                 properties={
-                    "query": types.Schema(type=types.Type.STRING)
+                    "query": types.Schema(type="STRING")
                 },
                 required=["query"]
+                # type=types.Type.OBJECT,
+                # properties={
+                #     "query": types.Schema(type=types.Type.STRING)
+                # },
+                # required=["query"]
             )
         )
     ]
