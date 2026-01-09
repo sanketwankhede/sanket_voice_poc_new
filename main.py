@@ -14,8 +14,8 @@ from pinecone import Pinecone
 # API_KEY ='AIzaSyBvgmtXOmywdn-sebBEIxabkxROpXjjtVQ' #os.getenv("GOOGLE_API_KEY") 
 # PINECONE_API_KEY = 'bbdfcf0d-b7de-4e8a-aa06-6d0c3b0066b8' #os.getenv("PINECONE_API_KEY")
 # PINECONE_INDEX_NAME = "chatbot"
-API_KEY = os.getenv("GOOGLE_API_KEY")  # ADD THIS
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")  # ADD THIS
+API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyBvgmtXOmywdn-sebBEIxabkxROpXjjtVQ")
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "bbdfcf0d-b7de-4e8a-aa06-6d0c3b0066b8")
 PINECONE_INDEX_NAME = "chatbot"
 # --- CONFIGURATION ---
 if not API_KEY:
